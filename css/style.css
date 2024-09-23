@@ -1,0 +1,108 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Styling for the header */
+header {
+    text-align: center;
+    background: #ff6f61;
+    color: white;
+    padding: 1.5rem;
+}
+
+/* Workout plan section container */
+#workout-plan {
+    margin: 20px;
+}
+
+/* Each day container */
+.day {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Day titles */
+.day h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Removing default list styles */
+.day ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each list item with flex layout */
+.day ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Images for each exercise */
+.day ul li img {
+    max-width: 100px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+/* Styling for the footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ff6f61;
+    color: white;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    /* Adjusting padding and margin for the workout plan */
+    #workout-plan {
+        margin: 10px;
+    }
+
+    /* Mobile view for each day container */
+    .day {
+        padding: 15px;
+    }
+
+    /* Responsive text size and layout adjustment */
+    .day ul li {
+        display: block;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    /* Adjust image size and layout */
+    .day ul li img {
+        display: block;
+        max-width: 80px;
+        margin: 10px auto;
+    }
+
+    /* Adjusting header padding for mobile view */
+    header {
+        padding: 1rem;
+    }
+
+    /* Smaller text size for the header */
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Adjusting footer padding for mobile view */
+    footer {
+        padding: 15px;
+    }
+}
